@@ -1,0 +1,2 @@
+time, accel 1, accel 2, accel 3, accel 4, accel top, accel bottom
+time - seconds (computed after test), deacceleration - kg, deacceleration - kg, deacceleration - kg, deacceleration - kg, deacceleration - kg, deacceleration - kg
