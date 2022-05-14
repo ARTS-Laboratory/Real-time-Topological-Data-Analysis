@@ -65,6 +65,17 @@
 1. Copy of 6.1
 1. Added a 3rd dimension. 
 
+# 6.4
+1. Copy of 6.3
+1. This code is designed to run with a memory profiler. 
+1. I used memory_profiler from https://towardsdatascience.com/profile-memory-consumption-of-python-functions-in-a-single-line-of-code-6403101db419 and https://anaconda.org/conda-forge/memory_profiler
+1. I tried to use spyder-memory-profiler but could not get it to work. 
+1. I created a python 3.7 environment in Anaconda, not sure that I needed to, and ran the code from the command line using <code>ipython v6.4_processing_code.py</code>.
+
+
+
+
+
 
 
 

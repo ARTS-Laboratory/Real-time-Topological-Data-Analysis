@@ -23,7 +23,7 @@ def my_func():
     xx_2 = D[400-tau_2:1000-tau_2,1]
     xx_3 = D[400-tau_3:1000-tau_3,1]
 
-    window=200
+    window=1000
     
     i_step = 100
     y = yy[i_step:window+i_step]
@@ -34,7 +34,7 @@ def my_func():
     data = np.vstack((x_1,x_2,x_3,y)).T
 
     t1 = time.time()
-    tda_results = ripser.ripser(data,metric='manhattan',maxdim=3)
+    tda_results = ripser.ripser(data,metric='manhattan',maxdim=2)
     print('********************** time '+str(round(time.time()-t1,3))+' s')
     
 
