@@ -72,7 +72,11 @@
 1. I tried to use spyder-memory-profiler but could not get it to work. 
 1. I created a python 3.7 environment in Anaconda, not sure that I needed to, and ran the code from the command line using <code>ipython v6.4_processing_code.py</code>.
 
-
+# 7.1 
+1. Working on a super simple TDA with Ripser trying to understand birth and death. 
+1. Need to figure out if epsilon is radius or diameter. 
+1. Neither the birst or death really makes sense. 
+1. You cna get an H_2 from 2D data, found on on 500 points. 
 
 
 

@@ -107,7 +107,9 @@ plt.savefig('high-rate_TDA',dpi=300)
 
 
 
-
+        # data = datasets.make_circles(n_samples=110)[0]
+        # dgms = ripser(data)['dgms']
+        # plot_dgms(dgms)
 
 
 
