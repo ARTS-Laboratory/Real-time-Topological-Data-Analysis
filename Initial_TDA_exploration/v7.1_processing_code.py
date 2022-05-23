@@ -115,9 +115,9 @@ def circle_plot_data(e,data):
 #%% load the data
 
 np.random.seed(7) # a seed of 7 can get a H_1 with only 5 data points
-data=np.random.randn(5,2)
+#data=np.random.randn(5,2)
 
-#data = np.array([[0,0,1,1],[0,1,1,0]]).T
+data = np.array([[0,0,1,1],[0,1,1,0]]).T
 x = data[:,0]
 y = data[:,1]
 
@@ -125,19 +125,49 @@ y = data[:,1]
 
 plt.figure(figsize=(7,2.5))
 plt.subplot(121)
-plt.xlim([-1,2])
-plt.ylim([-1,2])
-
-
-
-
+plt.scatter(x,y)
+# for i in range(x.shape[0]):
+#     plt.text(x[i]+0.05,y[i],str(i))
     
-
-
-
-
+# e=1
+# cr = circle_plot_data(e,data)
+# for ii in range(data.shape[0]):
+#     plt.plot(cr[ii][0:,0],cr[ii][0:,1],'k--',lw=0.5)
+    
+# e=1.414
+# cr = circle_plot_data(e,data)
+# for ii in range(data.shape[0]):
+#     plt.plot(cr[ii][0:,0],cr[ii][0:,1],'r--',lw=0.5)
+    
+e=1
+cr = circle_plot_data(e,data)
+for ii in range(data.shape[0]):
+    plt.plot(cr[ii][0:,0],cr[ii][0:,1],'g--',lw=0.5)
     
     
+    
+plt.axis('equal')
+plt.title('$\epsilon = $' + str(e) )
+plt.xlim([-2,2])
+#plt.ylim([-1,2])
+
+plt.subplot(122)
+t1 = time.time()
+tda_results = ripser.ripser(data,maxdim=2) # ,metric='manhattan'
+persim.plot_diagrams(tda_results['dgms'], show=True,lifetime=False)
+
+plt.tight_layout()
+
+
+plt.savefig('high-rate_TDA',dpi=300)
+
+
+
+
+
+
+
+plt.figure(figsize=(3.5,2.5))
 plt.scatter(x,y)
 # for i in range(x.shape[0]):
 #     plt.text(x[i]+0.05,y[i],str(i))
@@ -160,10 +190,12 @@ for ii in range(data.shape[0]):
     
     
 plt.axis('equal')
+plt.title('$\epsilon = $' + str(e) )
+plt.xlim([-2,2])
+#plt.ylim([-1,2])
+plt.savefig('high-rate_TDA_circle',dpi=300)
 
-
-
-plt.subplot(122)
+plt.figure(figsize=(4.5,3.5))
 t1 = time.time()
 tda_results = ripser.ripser(data,maxdim=2) # ,metric='manhattan'
 persim.plot_diagrams(tda_results['dgms'], show=True,lifetime=False)
@@ -171,15 +203,7 @@ persim.plot_diagrams(tda_results['dgms'], show=True,lifetime=False)
 plt.tight_layout()
 
 
-
-
-
-
-
-
-
-
-
+plt.savefig('high-rate_TDA',dpi=300)
 
 
 
