@@ -29,7 +29,7 @@ plt.close('all')
 #%%
 def preprocess(resample_period):
     import json
-    f = open('data_6_with_FFT.json')
+    f = open('./datasets/DROPBEAR.json')
     data = json.load(f)
     f.close()
     
