@@ -70,7 +70,7 @@ for i in range(N):
     for j in range(n):
         data[i, j] = d[i, j]
 # ripser algorithm
-tda_results = ripser.ripser(data)
+tda_results = ripser.ripser(data, maxdim=2)
 persim.plot_diagrams(tda_results['dgms'], show=True,lifetime=False)
 plt.tight_layout()
 # barcode
@@ -85,4 +85,5 @@ for i, ax in enumerate(axes):
     for j, bar in enumerate(bars):
         ax.plot(bar, [-j, -j], c='k')
         print(bar)
+    
 axes[0].set_xlim(left=0)

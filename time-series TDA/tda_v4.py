@@ -59,17 +59,25 @@ def preprocess(resample_period):
     y = pin
     
     return (X, y)
-#%%
+#%% tunable numbers
 test = 1
 
 data = np.load('./datasets/dataset-4/data_II/npy/test%02d.npy'%test)
-w_t = 0.0032 # window size (in seconds)
-s_t = 0.0008 # sliding amount
-sr = 50000 # sampling rate (from the data)
 X = data[:,-1]
+
+# downsample X and take only second before and after nonstationarity
+X = X.reshape(-1, 5)[:,0]
+X = X[X.size*4//10:X.size*6//10]
+
+w_t = 0.005 # window size (in seconds)
+s_t = 0.0008 # sliding amount
+d = 10 # TDA dimensionality (if None, = w_n)
+sr = 25000 # sampling rate (from the data)
 t = (1/sr)*np.arange(X.size)
 #%%
 w_n = int(w_t*sr) # samples in window
+if(d == None):
+    d = w_n
 s_n = int(s_t*sr) # sample sliding per window
 n_windows = (X.size - 2*w_n)//s_n
 n_samples = 2*w_n + n_windows*s_n
@@ -79,8 +87,8 @@ X = X[:n_samples]
 save_results = []
 for i in range(n_windows):
     #%%
-    sig = X[i*s_n:i*s_n+2*w_n]
-    data = np.lib.stride_tricks.sliding_window_view(sig, (w_n), writeable=False)
+    sig = X[i*s_n:i*s_n+w_n+d-1]
+    data = np.lib.stride_tricks.sliding_window_view(sig, (d), writeable=False)
     results = ripser.ripser(data, maxdim=2)['dgms']
     save_results.append(results)
     print(i)
@@ -92,10 +100,10 @@ for results in save_results:
     h2 = results[2]
     
     sv.append([h0.tolist(), h1.tolist(), h2.tolist()])
-with open('./processed TDA/dropbear.json', 'w') as f:
+with open('./processed TDA/test%d.json'%test, 'w') as f:
     json.dump(sv, f)
 #%% load results
-with open('./processed TDA/dropbear.json', 'r') as f:
+with open('./processed TDA/test%d.json'%test, 'r') as f:
     results = json.load(f)
 save_results = []
 for r in results:
@@ -115,31 +123,52 @@ for r in results:
 fig = plt.figure(figsize=(5, 6), constrained_layout=True)
 gs = GridSpec(3, 2, figure=fig)
 ax1 = fig.add_subplot(gs[0:2,:])
-ax2 = fig.add_subplot(gs[2,0])
-ax3 = fig.add_subplot(gs[2,1])
+ax2 = fig.add_subplot(gs[2,:])
 
 ax2.set_xlabel('time (s)')
 ax2.set_ylabel('acceleration (m/s^2)')
-ax3.set_xlabel('time (s)')
-ax3.set_ylabel('displacement (m)')
 
 ax2.set_ylim((np.min(X), np.max(X)))
-ax3.set_ylim((0, np.max(y)))
+# ax3.set_ylim((0, np.max(y)))
 
 l2, = ax2.plot([],[], c=cc[0])
-l3, = ax3.plot([],[], c=cc[1])
 
 def animate(i):
     results = save_results[i]
     sig = X[i*s_n:i*s_n+2*w_n]
-    y_sig = y[i*s_n:i*s_n+2*w_n]
     t_sig = t[i*s_n:i*s_n+2*w_n]
     
     persim.plot_diagrams(results,show=False,lifetime=False,ax=ax1)
     l2.set_data(t_sig, sig)
-    l3.set_data(t_sig, y_sig)
     ax2.set_xlim((t_sig[0], t_sig[-1]))
-    ax3.set_xlim((t_sig[0], t_sig[-1]))
+#%% animation frames 
+for i in range(0, len(save_results), 2):
+    fig = plt.figure(figsize=(5, 6), constrained_layout=True)
+    gs = GridSpec(3, 2, figure=fig)
+    ax1 = fig.add_subplot(gs[0:2,:])
+    ax2 = fig.add_subplot(gs[2,:])
+
+    ax2.set_xlabel('time (s)')
+    ax2.set_ylabel('acceleration (m/s^2)')
+    
+    ax2.set_ylim((np.min(X), np.max(X)))
+    
+    ax2.set_xticks([])
+    
+    l2, = ax2.plot([],[], c=cc[0])
+    
+    results = save_results[i]
+    sig = X[i*s_n:i*s_n+2*w_n]
+    t_sig = t[i*s_n:i*s_n+2*w_n]
+    
+    persim.plot_diagrams(results,show=False, xy_range=[0, .3, 0, .3], lifetime=False,ax=ax1)
+    l2.set_data(t_sig, sig)
+    ax2.set_xlim((t_sig[0], t_sig[-1]))
+    
+    fig.savefig('./figs/animation frames/%04d.png'%(i//2), dpi=300)
+    plt.close('all')
+    
+    print(i)
 #%% maximum H1 persistence 
 h1persistence = np.zeros((len(save_results)))
 h1birth = np.zeros((len(save_results)))
@@ -154,16 +183,14 @@ for i, r in enumerate(save_results):
     h1persistence[i] = h1_persistence[h1argmax]
     h1_t[i] = t[i*s_n+2*w_n]
 #%%
-fig, (ax1, ax2, ax3, ax4) = plt.subplots(4, 1, figsize=(5, 6), sharex=True)
+fig, (ax2, ax3, ax4) = plt.subplots(3, 1, figsize=(5, 6), sharex=True)
 
-ax1.set_ylabel('pin location (m)')
 ax2.set_ylabel('Max. H1 persistence')
 ax3.set_ylabel('H1 birth')
 ax4.set_ylabel('H1 death')
 ax4.set_xlabel('time (s)')
 ax4.set_xlim((t[0], t[-1]))
 
-ax1.plot(t, y, label='pin location')
 ax2.plot(h1_t, h1persistence)
 ax3.plot(h1_t, h1birth)
 ax4.plot(h1_t, h1death)
