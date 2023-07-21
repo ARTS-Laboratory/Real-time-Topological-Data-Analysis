@@ -49,7 +49,7 @@ def preprocess():
 #%% system descriptors
 sample_rate = 1000 # sampling rate (Hz)
 window_size = .25 # in seconds
-window_stride = .02 # in seconds
+window_stride = .001 # in seconds
 d = 6 # if None found optimally
 R_tol = 10 # tolerance for false neighbors
 e_tol = .001 # tolerated amount of false neighbors
