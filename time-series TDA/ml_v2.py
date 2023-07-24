@@ -148,6 +148,9 @@ model.fit(
     validation_data=[X_test, y_test],
     callbacks=[early_stopping]
 )
+
+keras.models.save_model(model, './model saves/dropbear')
+
 #%% see model results
 plt.rcParams.update({'image.cmap': 'viridis'})
 cc = plt.rcParams['axes.prop_cycle'].by_key()['color']
