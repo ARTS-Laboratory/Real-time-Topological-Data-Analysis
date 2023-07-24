@@ -67,14 +67,14 @@ def preprocess():
     return (x, y, x_t, y_t)
 #%% system description
 sample_rate = 1000 # sampling rate (Hz)
-window_size = .25 # in seconds
-window_stride = .02 # in seconds
+window_size = .05 # in seconds
+window_stride = .001 # in seconds
 d = 6 # if None found optimally
 R_tol = 10 # tolerance for false neighbors
 e_tol = .001 # tolerated amount of false neighbors
 
 window_points = int(sample_rate * window_size)
-#%% loading DROPBEAR and determining optimal embedding dimension and time delay
+#%% loading DROPBEAR
 (x, y, x_t, y_t) = preprocess()
 experiment_length = x.size/25600
 # resample to 1 kHz
@@ -109,6 +109,8 @@ for r in results:
         h2 = h2.reshape(0, 2)
 
     save_results.append([np.array(h0), np.array(h1), np.array(h2)])
+#%% feature extraction
+
 #%% feature extraction - take the five
 # process at each timestep
 h0_max = np.zeros((n_windows, 5, 2))
@@ -161,35 +163,45 @@ for i, dat_array in enumerate(data_arrays):
         data = np.append(data, data_array, axis=1)
 #%% ML
 y = Q_y[:,-1,-1]
-y = y[:y.size//n_stride*n_stride].reshape(-1, n_stride)[:,0]
+y_experimental = y[:y.size//n_stride*n_stride].reshape(-1, n_stride)[:,0]
 y_s = np.std(y)
-y = y/y_s
-# model is a pretty small dense NN
+y = y_experimental/y_s # normalize for training
+(data_train, data_test, y_train, y_test) = train_test_split(data, y, test_size=.2)
+# model is a dense NN
 model = keras.models.Sequential([
-    keras.layers.Dense(100, activation='relu', input_shape=(25,)),
-    keras.layers.Dense(100, activation='relu'),
+    keras.layers.Dense(200, activation='relu', input_shape=(25,)),
+    keras.layers.Dense(200, activation='relu'),
+    keras.layers.Dense(200, activation='relu'),
     keras.layers.Dense(1),
 ])
-(data_train, data_test, y_train, y_test) = train_test_split(data, y, test_size=.2)
 adam = keras.optimizers.Adam(
-    learning_rate = 0.01
+    learning_rate = 0.0005
 ) #clipnorm=1
 model.compile(
     loss="mse",
     optimizer=adam,
 )
-
+early_stopping = keras.callbacks.EarlyStopping(
+    monitor="val_loss",
+    min_delta=0,
+    patience=15,
+    verbose=0,
+    mode="auto",
+    baseline=None,
+    restore_best_weights=True,
+)
 model.fit(
     data_train, y_train,
+    batch_size=64,
     shuffle=True,
     epochs=1000,
     validation_data=[data_train, y_train],
+    callbacks=[early_stopping]
 )
-
-y *= y_s
+#%% see model results
 y_test *= y_s
 y_train *= y_s
-y_pred = model.predict(data_test) * y_s
+y_pred = model.predict(data_test).flatten() * y_s
 
 rmse_error = rmse(y_test, y_pred)
 snr_error = snr(y_test, y_pred)
@@ -200,7 +212,7 @@ print('snr: ' + str(snr_error))
 y_pred_all = model.predict(data) * y_s
 
 plt.figure()
-plt.plot(y, label='experimental values')
+plt.plot(y_experimental, label='experimental values')
 plt.plot(y_pred_all, label='model prediction')
 plt.legend()
 plt.tight_layout()

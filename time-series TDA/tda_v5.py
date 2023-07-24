@@ -48,7 +48,7 @@ def preprocess():
     return (x, y, x_t, y_t)
 #%% system descriptors
 sample_rate = 1000 # sampling rate (Hz)
-window_size = .25 # in seconds
+window_size = .05 # in seconds
 window_stride = .001 # in seconds
 d = 6 # if None found optimally
 R_tol = 10 # tolerance for false neighbors
@@ -106,7 +106,7 @@ n_stride = int(window_stride * sample_rate)
 n_windows = Q.shape[0]//n_stride
 #%% Now do TDA
 save_results = []
-for i in tqdm(range(n_windows)):
+for i in tqdm(range(n_windows), ascii=True):
     i = i*n_stride
     q = Q[i].T
     results = ripser.ripser(q, maxdim=2)['dgms']
