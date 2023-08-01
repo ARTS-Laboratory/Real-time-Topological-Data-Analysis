@@ -13,7 +13,7 @@ M = S1 + S2 * T;
 M_rearranged = M;  % Store the original M matrix
 M = [M(3, :) ./ 2; - M(2, :); M(1, :) ./ 2];
 
-[evec, eval] = eig(M); % eig() not supported by HDL Coder
+[evec, eval] = qr_algorithm(M); % eig() not supported by HDL Coder
 
 cond = 4 * evec(1, :) .* evec(3, :) - evec(2, :) .^ 2;
 
