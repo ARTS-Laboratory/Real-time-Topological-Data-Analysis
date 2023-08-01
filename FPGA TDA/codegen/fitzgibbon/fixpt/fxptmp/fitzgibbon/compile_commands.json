@@ -1,0 +1,254 @@
+[
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   fitzgibbon_float_mex_data.c -Fobuild\\win64\\fitzgibbon_float_mex_data.obj",
+    "file": "fitzgibbon_float_mex_data.c",
+    "output": "build/win64/fitzgibbon_float_mex_data.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   rt_nonfinite.c -Fobuild\\win64\\rt_nonfinite.obj",
+    "file": "rt_nonfinite.c",
+    "output": "build/win64/rt_nonfinite.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   fitzgibbon_float_mex_initialize.c -Fobuild\\win64\\fitzgibbon_float_mex_initialize.obj",
+    "file": "fitzgibbon_float_mex_initialize.c",
+    "output": "build/win64/fitzgibbon_float_mex_initialize.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   fitzgibbon_float_mex_terminate.c -Fobuild\\win64\\fitzgibbon_float_mex_terminate.obj",
+    "file": "fitzgibbon_float_mex_terminate.c",
+    "output": "build/win64/fitzgibbon_float_mex_terminate.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   fitzgibbon.c -Fobuild\\win64\\fitzgibbon.obj",
+    "file": "fitzgibbon.c",
+    "output": "build/win64/fitzgibbon.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   mtimes.c -Fobuild\\win64\\mtimes.obj",
+    "file": "mtimes.c",
+    "output": "build/win64/mtimes.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   inv.c -Fobuild\\win64\\inv.obj",
+    "file": "inv.c",
+    "output": "build/win64/inv.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   warning.c -Fobuild\\win64\\warning.obj",
+    "file": "warning.c",
+    "output": "build/win64/warning.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   eig.c -Fobuild\\win64\\eig.obj",
+    "file": "eig.c",
+    "output": "build/win64/eig.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   anyNonFinite.c -Fobuild\\win64\\anyNonFinite.obj",
+    "file": "anyNonFinite.c",
+    "output": "build/win64/anyNonFinite.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   xnrm2.c -Fobuild\\win64\\xnrm2.obj",
+    "file": "xnrm2.c",
+    "output": "build/win64/xnrm2.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   eigStandard.c -Fobuild\\win64\\eigStandard.obj",
+    "file": "eigStandard.c",
+    "output": "build/win64/eigStandard.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   xdladiv.c -Fobuild\\win64\\xdladiv.obj",
+    "file": "xdladiv.c",
+    "output": "build/win64/xdladiv.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   logStmts.c -Fobuild\\win64\\logStmts.obj",
+    "file": "logStmts.c",
+    "output": "build/win64/logStmts.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   custom_mex_logger.c -Fobuild\\win64\\custom_mex_logger.obj",
+    "file": "custom_mex_logger.c",
+    "output": "build/win64/custom_mex_logger.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   repmat.c -Fobuild\\win64\\repmat.obj",
+    "file": "repmat.c",
+    "output": "build/win64/repmat.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   customFetchLoggedData.c -Fobuild\\win64\\customFetchLoggedData.obj",
+    "file": "customFetchLoggedData.c",
+    "output": "build/win64/customFetchLoggedData.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   forcePushIntoCloud.c -Fobuild\\win64\\forcePushIntoCloud.obj",
+    "file": "forcePushIntoCloud.c",
+    "output": "build/win64/forcePushIntoCloud.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   interface\\_coder_fitzgibbon_float_mex_api.c -Fobuild\\win64\\_coder_fitzgibbon_float_mex_api.obj",
+    "file": "interface/_coder_fitzgibbon_float_mex_api.c",
+    "output": "build/win64/_coder_fitzgibbon_float_mex_api.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   interface\\_coder_fitzgibbon_float_mex_mex.c -Fobuild\\win64\\_coder_fitzgibbon_float_mex_mex.obj",
+    "file": "interface/_coder_fitzgibbon_float_mex_mex.c",
+    "output": "build/win64/_coder_fitzgibbon_float_mex_mex.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   eml_int_forloop_overflow_check.c -Fobuild\\win64\\eml_int_forloop_overflow_check.obj",
+    "file": "eml_int_forloop_overflow_check.c",
+    "output": "build/win64/eml_int_forloop_overflow_check.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   xzlarfg.c -Fobuild\\win64\\xzlarfg.obj",
+    "file": "xzlarfg.c",
+    "output": "build/win64/xzlarfg.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   xscal.c -Fobuild\\win64\\xscal.obj",
+    "file": "xscal.c",
+    "output": "build/win64/xscal.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   xgerc.c -Fobuild\\win64\\xgerc.obj",
+    "file": "xgerc.c",
+    "output": "build/win64/xgerc.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   xgemv.c -Fobuild\\win64\\xgemv.obj",
+    "file": "xgemv.c",
+    "output": "build/win64/xgemv.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   xzlarf.c -Fobuild\\win64\\xzlarf.obj",
+    "file": "xzlarf.c",
+    "output": "build/win64/xzlarf.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   xhseqr.c -Fobuild\\win64\\xhseqr.obj",
+    "file": "xhseqr.c",
+    "output": "build/win64/xhseqr.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   xdlanv2.c -Fobuild\\win64\\xdlanv2.obj",
+    "file": "xdlanv2.c",
+    "output": "build/win64/xdlanv2.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   xrot.c -Fobuild\\win64\\xrot.obj",
+    "file": "xrot.c",
+    "output": "build/win64/xrot.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   xzgehrd.c -Fobuild\\win64\\xzgehrd.obj",
+    "file": "xzgehrd.c",
+    "output": "build/win64/xzgehrd.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   xdlahqr.c -Fobuild\\win64\\xdlahqr.obj",
+    "file": "xdlahqr.c",
+    "output": "build/win64/xdlahqr.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   xswap.c -Fobuild\\win64\\xswap.obj",
+    "file": "xswap.c",
+    "output": "build/win64/xswap.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   xdtrevc3.c -Fobuild\\win64\\xdtrevc3.obj",
+    "file": "xdtrevc3.c",
+    "output": "build/win64/xdtrevc3.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   xzlascl.c -Fobuild\\win64\\xzlascl.obj",
+    "file": "xzlascl.c",
+    "output": "build/win64/xzlascl.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   xzgebal.c -Fobuild\\win64\\xzgebal.obj",
+    "file": "xzgebal.c",
+    "output": "build/win64/xzgebal.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   xzunghr.c -Fobuild\\win64\\xzunghr.obj",
+    "file": "xzunghr.c",
+    "output": "build/win64/xzunghr.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   xdlaln2.c -Fobuild\\win64\\xdlaln2.obj",
+    "file": "xdlaln2.c",
+    "output": "build/win64/xdlaln2.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   fitzgibbon_float_mex_emxutil.c -Fobuild\\win64\\fitzgibbon_float_mex_emxutil.obj",
+    "file": "fitzgibbon_float_mex_emxutil.c",
+    "output": "build/win64/fitzgibbon_float_mex_emxutil.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   fitzgibbon_float_mex_mexutil.c -Fobuild\\win64\\fitzgibbon_float_mex_mexutil.obj",
+    "file": "fitzgibbon_float_mex_mexutil.c",
+    "output": "build/win64/fitzgibbon_float_mex_mexutil.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   interface\\_coder_fitzgibbon_float_mex_info.c -Fobuild\\win64\\_coder_fitzgibbon_float_mex_info.obj",
+    "file": "interface/_coder_fitzgibbon_float_mex_info.c",
+    "output": "build/win64/_coder_fitzgibbon_float_mex_info.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   \"C:\\Program Files\\MATLAB\\R2023a\\extern\\version\\c_mexapi_version.c\" -Fobuild\\win64\\c_mexapi_version.obj",
+    "file": "C:/Program Files/MATLAB/R2023a/extern/version/c_mexapi_version.c",
+    "output": "build/win64/c_mexapi_version.obj"
+  },
+  {
+    "directory": "C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\\fxptmp\\fitzgibbon",
+    "command": "lcc64 -nodeclspec -Zp8 -dll -c -I\"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\include64\" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I\".\" -I\"C:\\Users\\dwamai\\Desktop\\linregellipse\\codegen\\fitzgibbon\\fixpt\" -I\".\\interface\" -I\"C:\\Program Files\\MATLAB\\R2023a\\extern\\include\" -I\".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex   \"C:\\Program Files\\MATLAB\\R2023a\\sys\\lcc64\\lcc64\\mex\\lccstub.c\" -Fobuild\\win64\\lccstub.obj",
+    "file": "C:/Program Files/MATLAB/R2023a/sys/lcc64/lcc64/mex/lccstub.c",
+    "output": "build/win64/lccstub.obj"
+  }
+]

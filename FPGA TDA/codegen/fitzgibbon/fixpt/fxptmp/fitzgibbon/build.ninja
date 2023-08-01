@@ -1,0 +1,83 @@
+# CompilerName=lcc64
+# Mode=optim
+ninja_required_version = 1.3
+
+# Basic folders
+root = .
+builddir = $root\build\win64
+matlabdir = C:\Program Files\MATLAB\R2023a
+startdir = C:\Users\dwamai\Desktop\linregellipse\codegen\fitzgibbon\fixpt
+
+# Toolchain information
+cc = lcc64
+cxx = 
+linker = lcclnk64
+linkerxx = 
+
+cflags =  -nodeclspec -Zp8 -dll -c -I"$matlabdir\sys\lcc64\lcc64\include64" -DMATLAB_MEX_FILE -noregistrylookup -DNDEBUG -I"$root" -I"$startdir" -I"$root\interface" -I"$matlabdir\extern\include" -I"." -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex  
+
+cxxflags =  -I"$root" -I"$startdir" -I"$root\interface" -I"$matlabdir\extern\include" -I"." -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=fitzgibbon_float_mex  
+
+ldflags =  -dll -L"$matlabdir\sys\lcc64\lcc64\lib64" -L"$matlabdir\extern\lib\win64\microsoft" -entry LibMain libmx.lib libmex.lib libmat.lib libemlrt.lib libcovrt.lib libut.lib libmwmathutil.lib -o fitzgibbon_float_mex.mexw64 -s -L"$matlabdir\extern\lib\win64\microsoft" libmwblas.lib libmwlapack.lib  fitzgibbon_float_mex.def
+
+linkobjs = 
+
+# Build Rules
+rule cc
+    command = $cc $cflags $in -Fo$out
+
+rule cxx
+    command = $cxx $cxxflags $in -Fo$out
+
+rule link
+    command = $linker $in $linkobjs $ldflags
+
+rule linkxx
+    command = $linkerxx $in $linkobjs $ldflags
+
+# Build
+build $builddir\fitzgibbon_float_mex_data.obj : cc $root\fitzgibbon_float_mex_data.c
+build $builddir\rt_nonfinite.obj : cc $root\rt_nonfinite.c
+build $builddir\fitzgibbon_float_mex_initialize.obj : cc $root\fitzgibbon_float_mex_initialize.c
+build $builddir\fitzgibbon_float_mex_terminate.obj : cc $root\fitzgibbon_float_mex_terminate.c
+build $builddir\fitzgibbon.obj : cc $root\fitzgibbon.c
+build $builddir\mtimes.obj : cc $root\mtimes.c
+build $builddir\inv.obj : cc $root\inv.c
+build $builddir\warning.obj : cc $root\warning.c
+build $builddir\eig.obj : cc $root\eig.c
+build $builddir\anyNonFinite.obj : cc $root\anyNonFinite.c
+build $builddir\xnrm2.obj : cc $root\xnrm2.c
+build $builddir\eigStandard.obj : cc $root\eigStandard.c
+build $builddir\xdladiv.obj : cc $root\xdladiv.c
+build $builddir\logStmts.obj : cc $root\logStmts.c
+build $builddir\custom_mex_logger.obj : cc $root\custom_mex_logger.c
+build $builddir\repmat.obj : cc $root\repmat.c
+build $builddir\customFetchLoggedData.obj : cc $root\customFetchLoggedData.c
+build $builddir\forcePushIntoCloud.obj : cc $root\forcePushIntoCloud.c
+build $builddir\_coder_fitzgibbon_float_mex_api.obj : cc $root\interface\_coder_fitzgibbon_float_mex_api.c
+build $builddir\_coder_fitzgibbon_float_mex_mex.obj : cc $root\interface\_coder_fitzgibbon_float_mex_mex.c
+build $builddir\eml_int_forloop_overflow_check.obj : cc $root\eml_int_forloop_overflow_check.c
+build $builddir\xzlarfg.obj : cc $root\xzlarfg.c
+build $builddir\xscal.obj : cc $root\xscal.c
+build $builddir\xgerc.obj : cc $root\xgerc.c
+build $builddir\xgemv.obj : cc $root\xgemv.c
+build $builddir\xzlarf.obj : cc $root\xzlarf.c
+build $builddir\xhseqr.obj : cc $root\xhseqr.c
+build $builddir\xdlanv2.obj : cc $root\xdlanv2.c
+build $builddir\xrot.obj : cc $root\xrot.c
+build $builddir\xzgehrd.obj : cc $root\xzgehrd.c
+build $builddir\xdlahqr.obj : cc $root\xdlahqr.c
+build $builddir\xswap.obj : cc $root\xswap.c
+build $builddir\xdtrevc3.obj : cc $root\xdtrevc3.c
+build $builddir\xzlascl.obj : cc $root\xzlascl.c
+build $builddir\xzgebal.obj : cc $root\xzgebal.c
+build $builddir\xzunghr.obj : cc $root\xzunghr.c
+build $builddir\xdlaln2.obj : cc $root\xdlaln2.c
+build $builddir\fitzgibbon_float_mex_emxutil.obj : cc $root\fitzgibbon_float_mex_emxutil.c
+build $builddir\fitzgibbon_float_mex_mexutil.obj : cc $root\fitzgibbon_float_mex_mexutil.c
+build $builddir\_coder_fitzgibbon_float_mex_info.obj : cc $root\interface\_coder_fitzgibbon_float_mex_info.c
+build $builddir\c_mexapi_version.obj : cc $matlabdir\extern\version\c_mexapi_version.c
+build $builddir\lccstub.obj : cc $matlabdir\sys\lcc64\lcc64\mex\lccstub.c
+
+# Link
+build $root\fitzgibbon_float_mex.mexw64 : link $builddir\fitzgibbon_float_mex_data.obj $builddir\rt_nonfinite.obj $builddir\fitzgibbon_float_mex_initialize.obj $builddir\fitzgibbon_float_mex_terminate.obj $builddir\fitzgibbon.obj $builddir\mtimes.obj $builddir\inv.obj $builddir\warning.obj $builddir\eig.obj $builddir\anyNonFinite.obj $builddir\xnrm2.obj $builddir\eigStandard.obj $builddir\xdladiv.obj $builddir\logStmts.obj $builddir\custom_mex_logger.obj $builddir\repmat.obj $builddir\customFetchLoggedData.obj $builddir\forcePushIntoCloud.obj $builddir\_coder_fitzgibbon_float_mex_api.obj $builddir\_coder_fitzgibbon_float_mex_mex.obj $builddir\eml_int_forloop_overflow_check.obj $builddir\xzlarfg.obj $builddir\xscal.obj $builddir\xgerc.obj $builddir\xgemv.obj $builddir\xzlarf.obj $builddir\xhseqr.obj $builddir\xdlanv2.obj $builddir\xrot.obj $builddir\xzgehrd.obj $builddir\xdlahqr.obj $builddir\xswap.obj $builddir\xdtrevc3.obj $builddir\xzlascl.obj $builddir\xzgebal.obj $builddir\xzunghr.obj $builddir\xdlaln2.obj $builddir\fitzgibbon_float_mex_emxutil.obj $builddir\fitzgibbon_float_mex_mexutil.obj $builddir\_coder_fitzgibbon_float_mex_info.obj $builddir\c_mexapi_version.obj $builddir\lccstub.obj 
