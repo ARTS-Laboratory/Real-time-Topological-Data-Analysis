@@ -117,6 +117,15 @@ t = Q_t[:,-1, -1]
 y_s = np.std(y)
 y = y_experimental/y_s # normalize for training
 (X_train, X_test, y_train, y_test) = train_test_split(X, y, test_size=.2)
+# save datasets
+np.save('./datasets/X.npy', X)
+np.save('./datasets/y.npy', y)
+np.save('./datasets/y_experimental.npy', y_experimental)
+np.save('./datasets/X_train.npy', X_train)
+np.save('./datasets/X_test.npy', X_test)
+np.save('./datasets/y_train.npy', y_train)
+np.save('./datasets/y_test.npy', y_test)
+
 # model is a dense NN
 model = keras.models.Sequential([
     keras.layers.Dense(150, activation='relu', input_shape=(29,)),
@@ -144,7 +153,7 @@ model.fit(
     X_train, y_train,
     batch_size=64,
     shuffle=True,
-    epochs=1000,
+    epochs=300,
     validation_data=[X_test, y_test],
     callbacks=[early_stopping]
 )
@@ -164,7 +173,6 @@ plt.rcParams.update({'mathtext.fontset': 'custom'})
 plt.rcParams.update({'mathtext.rm': 'serif'})
 plt.rcParams.update({'mathtext.it': 'serif:italic'})
 plt.rcParams.update({'mathtext.bf': 'serif:bold'})
-plt.rcParams["animation.html"] = "jshtml" # necessary only for jupyter notebooks
 plt.close('all')
 
 
